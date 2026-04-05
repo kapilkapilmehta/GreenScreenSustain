@@ -1,41 +1,56 @@
 # GreenScreen Sustain Website
 
-Simple static website prepared for Vercel deployment.
+Static marketing site for GreenScreen Sustain, designed for simple Vercel deployment.
 
-## Project files
+## Project structure
 
-- `index.html`: homepage content and structure
-- `style.css`: styling and responsive layout
-- `assets/`: imported logo and prototype images
-- `vercel.json`: basic Vercel config
+- `index.html` contains the full page structure and copy.
+- `style.css` contains the visual system, layout, and responsive styles.
+- `assets/` contains the supplied brand and prototype imagery.
+- `vercel.json` enables clean URLs on deployment.
 
-## Current content source
+## Local preview
 
-The site copy is based on:
+Because this is a plain static site, you can preview it with any lightweight static server.
 
-- supplied prototype images
-- Dr. Anjali Mehta's resume
-- sustainability and layered-material references from the provided deck imagery
+Example:
 
-## Important assumptions
+```bash
+python3 -m http.server 8000
+```
 
-- The new website brand is `GreenScreen Sustain`
-- The earlier work under `greenscreenprotect.com` is being carried forward into this new site
-- The intended new domain is likely `greenscreenprotect.in`
+Then open `http://localhost:8000`.
 
-## Before launch
-
-Review and confirm:
-
-- preferred final brand name
-- exact domain spelling
-- final contact email and phone number
-- any additional claims, awards, or product details to add from the pitch deck
-
-## Deploy on Vercel
+## Deployment
 
 1. Create or log in to your Vercel account.
 2. Import this folder as a new project.
-3. Deploy.
-4. Add your custom domain in Vercel.
-5. Copy the DNS records Vercel gives you into GoDaddy.
+3. Deploy the site.
+4. Add the custom domain in Vercel.
+5. Point the DNS records from your registrar to the values Vercel provides.
+
+## Content basis
+
+The current website copy and layout are based on:
+
+- prototype imagery shared for the project
+- Dr. Anjali Mehta's background and professional profile
+- the layered-material PPE concept shown in the reference deck
+
+## Launch checklist
+
+Confirm these before going live:
+
+- final brand name and preferred domain
+- final contact email, phone number, and postal address
+- approved wording for the patent and award references
+- full team list and titles
+- any investor, hospital, research, or press references to include
+
+## Git workflow
+
+Current recommended flow:
+
+- use `main` as the default branch
+- deploy from GitHub to Vercel
+- prefer SSH auth for future pushes after adding the generated public key to GitHub
