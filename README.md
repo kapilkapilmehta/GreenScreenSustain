@@ -41,7 +41,7 @@ The current website copy and layout are based on:
 
 Confirm these before going live:
 
-- final brand name and preferred domain
+- final brand name and preferred domain: `greenscreensustain.in`
 - final contact email, phone number, and postal address
 - approved wording for the patent and award references
 - full team list and titles
