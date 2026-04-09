@@ -104,6 +104,37 @@ a {
   color: var(--muted);
 }
 
+.investor-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.5rem;
+  padding: 0.55rem 1.1rem;
+  background: var(--accent-soft);
+  border: 1px solid rgba(20, 146, 92, 0.25);
+  border-radius: 999px;
+  font-size: 0.92rem;
+}
+
+.investor-label {
+  color: var(--accent-deep);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.investor-label::after {
+  content: "·";
+  margin-left: 0.65rem;
+  color: var(--accent);
+}
+
+.investor-name {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
